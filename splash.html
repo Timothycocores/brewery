@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to display a confirm box.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x;
+    if (confirm("Are You Over 21?") == true) {
+        x = "Welcome!";
+    } else {
+        x = "Come Back When You Are Older!";
+    }
+    document.getElementById("verify").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
