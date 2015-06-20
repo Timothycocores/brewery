@@ -1,0 +1,22 @@
+#nav {
+	background-color: black;
+	color: white;
+	font-family: helvetica;
+	height: 40px;
+	margin-left: -3px;
+	margin-right: -5px;
+	padding-top: 10px;
+
+}
+
+
+<div id="nav">
+<ol>
+	<li>About</li>
+	/
+	<li>Beers</li>
+	/
+	<li>Contact</li>
+	</div>
+
+
