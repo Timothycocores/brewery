@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+ body{
+
+	background-image: url("http://www.dmcityview.com/wp-content/uploads/2012/11/Confluence-fermenters.jpg");
+	 background-size: 100%;
+	opacity: .6%;
+	margin-right: 20px;
+	margin-left: 20px;
+
+}
+
+#demo{
+	text-align: center;
+}
+#title{
+	float: right;
+	color: white;
+	font-family: arial;
+	width:800px; margin:0 auto;
+	margin-right: 415px;
+	margin-top: 25px;
+	font-size: 12px;
+	box-shadow: grey;
+
+}
+
+#round {
+background: black;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+#logo {
+	float: left;
+width: 60px;
+height: 60px;
+
+}
+
+#blurb {
+text-align: center;
+vertical-align: center;
+font-size: 30px;
+color: black;
+background: white;
+width: 680px;
+height: 70px;
+}
+</style>
+</head>
 <body>
+<div id="logo">
 
-<p>Click the button to display a confirm box.</p>
+</div>
+<div id="title">
+<h1><u>Le Petit Chien<u></h1>
+</div>
+<br>
+<div id="round">
+</div>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Enter</button>
 
 <p id="demo"></p>
 
@@ -19,6 +77,8 @@ function myFunction() {
     document.getElementById("verify").innerHTML = x;
 }
 </script>
-
+<div id="blurb">
+<h2>French Name. American Made.</h2>
+</div>
 </body>
 </html>
