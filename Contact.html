@@ -2,6 +2,28 @@
 <html>
 
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+$(document).ready(function(){
+	$("#username").focus();
+alert("Hello!");
+	//grab the data input by user on CLICK of the button
+	$("#submitBTN").click(function(){
+		username_valid = false;
+		password_valid = false;
+		errorMsg = "";
+
+		user = $("#name").val();
+		pass = $("#message").val();
+
+		//console.log(user);
+		//console.log(pass);
+
+		validate();
+
+	});
+
+		</script>
 <style>
 body{
 	margin-right: 20px;
@@ -47,6 +69,20 @@ text-align: center;
 font-family: helvetica;
 font-style: oblique;
 }
+
+h1{
+	font-family:verdana;
+}
+
+input{
+	height:50px;
+	width:200px;
+	font-size:20pt;
+	font-weight:bold;
+	color:green;
+	border-radius:10px;
+	border:solid 1px green;
+	margin:10px;
 </style>
 </head>
 
@@ -61,23 +97,18 @@ font-style: oblique;
 	  <br>
 	</div>
 	<div id="contact">
-	<form>
-First name:<br>
-<input type="text" name="firstname" value="John" placeholder="John">
-<br>
-Last name:<br>
-<input type="text" name="lastname" value="Smith" placeholder="smith">
-<br>
-Email:<br>
-<input type="text" name="email" value="johnsmith@america.com" placeholder="johnsmith@america.com">
-<br>
-<div id="message">
-Message:<br>
-<input type="text" name="message" value="Type your message here.">
-
-<br><br>
+	
 <button>Submit</button>
-	</form>
+	<form id="login" name="login" action="thankyou.html" method="POST">
+			<input type="text" id="name" name="name" placeholder="name"/>
+
+			<input type="message" id="message" name="message" placeholder="message"/>
+
+			<input type="submit" value="Submit" id="submitBTN"/>
+
+
+		</form>
+<br><br>
 	</div>
 </div>
 	</div>
