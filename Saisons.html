@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <title>Saisons</title>
 <head>
+<script>
+	//should go inside your <head> tag
+function onHover()
+{
+    $("#menuImg").attr('src', 'https://d2ia58550xamqo.cloudfront.net/b003e50e4af848269f2a6d46dd34dac2.jpg');
+}
+
+function offHover()
+{
+    $("#menuImg").attr('src', 'http://www.drinkstuff.com/productimg/48602_large.jpg');
+}
+</script>
 <style>
+body{
+	 margin: 100px 50px;
+}
 #banner3 { 
 margin-left: -60px;
 margin-right: -70px;
@@ -22,6 +41,10 @@ height: 100px;
 }
 .blurb {
 	color: black;
+}
+#pageTitle {
+
+	font-family: serif;
 }
 
 #bottleImage2 {
@@ -80,11 +103,6 @@ li {
     display: inline;
 }
 
-a:hover {
-    background-color: black;
-    color: grey;
-    height: 20px;
-}
 #footer {
 	padding-top: 15px;
 	background-color: black;
@@ -96,7 +114,9 @@ a:hover {
 </head>
 
 <body>
-	<h1>Saison's</h1>
+	<div id="pageTitle">
+	<h1>Saison Styles</h1>
+</div>
 	<div id="banner3">
 <img src="http://pdxpedicab.com/home/wp-content/uploads/2013/09/Brewery.jpg" width="1328px" height="absolute">
 </div>
@@ -112,38 +132,42 @@ a:hover {
 	<img src="http://www.spinnakers.com/media/beer-blank.png" height= "100" width= "absolute">
 </div>
 <div id"text">
-		<h3>text</h3>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque dolor, iaculis eu leo vitae, egestas imperdiet orci. Etiam sit amet commodo mauris. In consequat lacinia purus, interdum accumsan erat facilisis ut. Phasellus rhoncus arcu orci, at pulvinar lectus dictum id. Fusce vel massa arcu. Donec sit amet leo eget erat maximus viverra. Nulla feugiat est lectus, at dignissim nisi aliquam non. Nam urna odio, convallis sed augue nec, ultricies porttitor arcu. Fusce molestie augue vel urna viverra posuere. Fusce id urna purus.</h3>
 	</div>
 <div id="bottleImage3">
 	<img src="http://www.spinnakers.com/media/beer-blank.png" height= "100" width= "absolute">
 </div>
 <div id"text">
-		<h3>text</h3>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque dolor, iaculis eu leo vitae, egestas imperdiet orci. Etiam sit amet commodo mauris. In consequat lacinia purus, interdum accumsan erat facilisis ut. Phasellus rhoncus arcu orci, at pulvinar lectus dictum id. Fusce vel massa arcu. Donec sit amet leo eget erat maximus viverra. Nulla feugiat est lectus, at dignissim nisi aliquam non. Nam urna odio, convallis sed augue nec, ultricies porttitor arcu. Fusce molestie augue vel urna viverra posuere. Fusce id urna purus.
+
+Nam mauris urna, efficitur ac viverra at, varius vitae justo. Suspendisse et arcu mattis orci interdum pharetra eget nec velit. Praesent vel mattis ipsum. In sed est ac ligula mattis pretium. Vestibulum ut pretium lectus. Nam lacinia arcu eget urna convallis, vitae pharetra massa rhoncus. In hendrerit, metus at eleifend interdum, augue nunc ultricies risus, sit amet sollicitudin turpis nibh sit amet magna. Pellentesque eros orci, elementum quis quam at, mattis volutpat purus. Aliquam et felis ut risus auctor consectetur sed sed risus. Integer dignissim elit id porttitor ullamcorper. Aliquam nibh diam, fermentum a posuere quis, laoreet vel ante. Nullam sollicitudin, libero vitae fringilla dapibus, enim mauris porttitor neque, ac tempus sapien sem ac tortor. Vestibulum dui leo, interdum ut quam efficitur, maximus sollicitudin enim. Pellentesque feugiat et nulla nec semper.
+
+Integer dignissim massa a metus rutrum auctor. Vivamus tincidunt malesuada felis, egestas gravida mi fringilla nec. Curabitur varius consectetur justo in venenatis. Donec augue nulla, dignissim eget orci eu, blandit eleifend sem. Ut accumsan tincidunt nisl. Sed vel consectetur ligula. Donec nisi neque, consectetur sit amet dolor id, vulputate bibendum nisl. Cras dapibus enim eu elit feugiat, vel cursus nibh ornare. Nunc molestie tincidunt lectus nec volutpat. Nullam vel blandit libero.</h3>
 	</div>
 
 <div id="bottleImage4">
 	<img src="http://www.spinnakers.com/media/beer-blank.png" height= "100" width= "absolute">
 </div>
 <div id"blurb">
-		<h3>text</h3>
+		<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce neque dolor, iaculis eu leo vitae, egestas imperdiet orci. Etiam sit amet commodo mauris. In consequat lacinia purus, interdum accumsan erat facilisis ut. Phasellus rhoncus arcu orci, at pulvinar lectus dictum id. Fusce vel massa arcu. Donec sit amet leo eget erat maximus viverra. Nulla feugiat est lectus, at dignissim nisi aliquam non. Nam urna odio, convallis sed augue nec, ultricies porttitor arcu. Fusce molestie augue vel urna viverra posuere. Fusce id urna purus.</h3>
 	</div>
 
-	<footer>
-		<div id="footer">
-			<ul>
-		<li><a href="#">About</li>
-		/
-		<li><a href="#">Company</li>
-		/
-		<li><a href="#">Saisons</li>
-		/
-		<li><a href="#">Locator</li>
-		/
-		<li><a href="#">Contact</li>
-		</ul>
-		<h6>&copy Le Petit Chien 2015</h6>
+	<div id="menu" >  
+  <a href="#" id="home">
+    <img id="menuImg" src="https://d2ia58550xamqo.cloudfront.net/b003e50e4af848269f2a6d46dd34dac2.jpg" alt="logo" onmouseover="onHover();" 
+      onmouseout="offHover();" />
+  </a>
 </div>
-	</footer>
+
+
+	<div id="footer">
+			<ul class="nav nav-pills">
+  <li role="presentation"><a href="welcom.html">Company</a></li>
+  <li role="presentation" class="active"><a href="Saisons.html">Saisons</a></li>
+  <li role="presentation"><a href="locator.html">Locator</a></li>
+  <li role="presentation"><a href="Contact.html">Contact</a></li>
+</ul>
+</div>
 </body>
 
 </html>
